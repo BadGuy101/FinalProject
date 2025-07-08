@@ -1,0 +1,721 @@
+Fatal error: 'DriverInterface' object has no attribute 'send_ping'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 124, in main
+    if not driver.send_ping().is_ok():
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'DriverInterface' object has no attribute 'send_ping'
+Fatal error: DriverError.__init__() takes from 1 to 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 124, in main
+    if not driver.send_ping().is_ok():
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\driver_comm.py", line 102, in send_ping
+    self._send_ioctl(self.IOCTL_PING, input_struct=ctypes.create_string_buffer(0))
+  File "e:\MyFYP\MyProg\AdvoSheild\core\driver_comm.py", line 92, in _send_ioctl
+    raise DriverError("IOCTL failed", ctypes.get_last_error())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: DriverError.__init__() takes from 1 to 2 positional arguments but 3 were given
+Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 292, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 993 more times]
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 236, in install_package
+    if not self._check_environment_compatibility(package_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 292, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 993 more times]
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 236, in install_package
+    if not self._check_environment_compatibility(package_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+Fatal error: 'AdvancedDependencyManager' object has no attribute '_install_package'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 292, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self._install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AdvancedDependencyManager' object has no attribute '_install_package'
+Fatal error: 'AdvancedDependencyManager' object has no attribute '_install_package'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 292, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self._install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AdvancedDependencyManager' object has no attribute '_install_package'
+Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 301, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 993 more times]
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 236, in install_package
+    if not self._check_environment_compatibility(package_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 301, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 993 more times]
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 236, in install_package
+    if not self._check_environment_compatibility(package_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+AdvoShield shutdown complete
+Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 301, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 993 more times]
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 236, in install_package
+    if not self._check_environment_compatibility(package_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+AdvoShield shutdown complete
+Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 301, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 993 more times]
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 236, in install_package
+    if not self._check_environment_compatibility(package_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+AdvoShield shutdown complete
+Fatal error: 'AdvancedDependencyManager' object has no attribute 'get_dependencies'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 300, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 246, in install_package
+    dependencies = self.get_dependencies(package_name)
+                   ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AdvancedDependencyManager' object has no attribute 'get_dependencies'
+AdvoShield shutdown complete
+Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 301, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 993 more times]
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 236, in install_package
+    if not self._check_environment_compatibility(package_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+AdvoShield shutdown complete
+Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 301, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 242, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 993 more times]
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 236, in install_package
+    if not self._check_environment_compatibility(package_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+AdvoShield shutdown complete
+Fatal error: 'AdvancedDependencyManager' object has no attribute 'get_dependencies'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 303, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 240, in install_package
+    dependencies = self.get_dependencies(package_name)
+                   ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AdvancedDependencyManager' object has no attribute 'get_dependencies'
+AdvoShield shutdown complete
+Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 123, in main
+    AdvancedDependencyManager().check_and_install_all()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 302, in check_and_install_all
+    self.install_package(
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 243, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 243, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 243, in install_package
+    if not self.install_package(dep, dep_hash):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 993 more times]
+  File "e:\MyFYP\MyProg\AdvoSheild\core\dependency_manager.py", line 237, in install_package
+    if not self._check_environment_compatibility(package_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+AdvoShield shutdown complete
+Driver unavailable: DriverError.__init__() takes from 1 to 2 positional arguments but 3 were given
+Fatal error: name 'callback' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 138, in main
+    components.update(initialize_components())
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 63, in initialize_components
+    components["system_monitor"] = AdvancedSystemMonitor()
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\system_monitor.py", line 19, in __init__
+    self._callback = callback
+                     ^^^^^^^^
+NameError: name 'callback' is not defined
+AdvoShield shutdown complete
+Driver unavailable: DriverError.__init__() takes from 1 to 2 positional arguments but 3 were given
+Fatal error: name 'callback' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 138, in main
+    components.update(initialize_components())
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 63, in initialize_components
+    components["system_monitor"] = AdvancedSystemMonitor()
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\system_monitor.py", line 19, in __init__
+    self._callback = callback
+                     ^^^^^^^^
+NameError: name 'callback' is not defined
+AdvoShield shutdown complete
+Driver unavailable: ('Driver connection failed', 2)
+Component initialization failed: name 'os' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 65, in initialize_components
+    components["threat_intel"] = AdvancedThreatIntelligence()
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\threat_intelligence.py", line 33, in __init__
+    self.load_threat_data()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\threat_intelligence.py", line 193, in load_threat_data
+    if os.path.exists(filename):
+       ^^
+NameError: name 'os' is not defined
+Fatal error: name 'os' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 138, in main
+    components.update(initialize_components())
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 65, in initialize_components
+    components["threat_intel"] = AdvancedThreatIntelligence()
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\core\threat_intelligence.py", line 33, in __init__
+    self.load_threat_data()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\threat_intelligence.py", line 193, in load_threat_data
+    if os.path.exists(filename):
+       ^^
+NameError: name 'os' is not defined
+AdvoShield shutdown complete
+Driver unavailable: ('Driver connection failed', 2)
+Component initialization failed: NetworkSniffer.__init__() got an unexpected keyword argument 'stop_event'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 83, in initialize_components
+    components["network_sniffer"] = NetworkSniffer(
+                                    ^^^^^^^^^^^^^^^
+TypeError: NetworkSniffer.__init__() got an unexpected keyword argument 'stop_event'
+Fatal error: NetworkSniffer.__init__() got an unexpected keyword argument 'stop_event'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 138, in main
+    components.update(initialize_components())
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 83, in initialize_components
+    components["network_sniffer"] = NetworkSniffer(
+                                    ^^^^^^^^^^^^^^^
+TypeError: NetworkSniffer.__init__() got an unexpected keyword argument 'stop_event'
+AdvoShield shutdown complete
+Driver unavailable: ('Driver connection failed', 2)
+Initializing system components...
+Fatal error: cannot import name 'ProcessMonitor' from 'core.system_monitor' (e:\MyFYP\MyProg\AdvoSheild\core\system_monitor.py)
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 139, in main
+    components["security_manager"].initialize_monitors()
+  File "e:\MyFYP\MyProg\AdvoSheild\core\security_manager.py", line 30, in initialize_monitors
+    from .system_monitor import ProcessMonitor
+ImportError: cannot import name 'ProcessMonitor' from 'core.system_monitor' (e:\MyFYP\MyProg\AdvoSheild\core\system_monitor.py)
+AdvoShield shutdown complete
+Driver unavailable: ('Driver connection failed', 2)
+Initializing system components...
+Fatal error: No module named 'gui.main_window'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 154, in main
+    from gui.gui import AdvoShieldGUI
+  File "e:\MyFYP\MyProg\AdvoSheild\gui\__init__.py", line 8, in <module>
+    from .main_window import launch_gui
+ModuleNotFoundError: No module named 'gui.main_window'
+AdvoShield shutdown complete
+Driver unavailable: ('Driver connection failed', 2)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() got an unexpected keyword argument 'network_analyzer'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 155, in main
+    AdvoShieldGUI(**components)
+TypeError: AdvoShieldGUI.__init__() got an unexpected keyword argument 'network_analyzer'
+AdvoShield shutdown complete
+Driver unavailable: ('Driver connection failed', 2)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() got an unexpected keyword argument 'network_analyzer'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 155, in main
+    AdvoShieldGUI(**components)
+TypeError: AdvoShieldGUI.__init__() got an unexpected keyword argument 'network_analyzer'
+AdvoShield shutdown complete
+Driver unavailable: ('Driver connection failed', 2)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() got an unexpected keyword argument 'network_analyzer'
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 155, in main
+    AdvoShieldGUI(**components)
+TypeError: AdvoShieldGUI.__init__() got an unexpected keyword argument 'network_analyzer'
+AdvoShield shutdown complete
+Driver unavailable: ('Driver connection failed', 2)
+Initializing system components...
+AdvoShield shutdown complete
+Driver unavailable: ('Driver connection failed', 2)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Component initialization failed: name 'HistGradientBoostingClassifier' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 68, in initialize_components
+    ml_engine = AdvancedMLEngine()
+                ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1029, in __init__
+    self.models = self._initialize_models()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1153, in _initialize_models
+    'hist_gbm': HistGradientBoostingClassifier(random_state=42),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HistGradientBoostingClassifier' is not defined
+Fatal error: name 'HistGradientBoostingClassifier' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 140, in main
+    components.update(initialize_components())
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 68, in initialize_components
+    ml_engine = AdvancedMLEngine()
+                ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1029, in __init__
+    self.models = self._initialize_models()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1153, in _initialize_models
+    'hist_gbm': HistGradientBoostingClassifier(random_state=42),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HistGradientBoostingClassifier' is not defined
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Component initialization failed: name 'HistGradientBoostingClassifier' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 68, in initialize_components
+    ml_engine = AdvancedMLEngine()
+                ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1029, in __init__
+    self.models = self._initialize_models()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1153, in _initialize_models
+    'hist_gbm': HistGradientBoostingClassifier(random_state=42),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HistGradientBoostingClassifier' is not defined
+Fatal error: name 'HistGradientBoostingClassifier' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 140, in main
+    components.update(initialize_components())
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 68, in initialize_components
+    ml_engine = AdvancedMLEngine()
+                ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1029, in __init__
+    self.models = self._initialize_models()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1153, in _initialize_models
+    'hist_gbm': HistGradientBoostingClassifier(random_state=42),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HistGradientBoostingClassifier' is not defined
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Component initialization failed: name 'HistGradientBoostingClassifier' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 68, in initialize_components
+    ml_engine = AdvancedMLEngine()
+                ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1029, in __init__
+    self.models = self._initialize_models()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1153, in _initialize_models
+    'hist_gbm': HistGradientBoostingClassifier(random_state=42),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HistGradientBoostingClassifier' is not defined
+Fatal error: name 'HistGradientBoostingClassifier' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 140, in main
+    components.update(initialize_components())
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 68, in initialize_components
+    ml_engine = AdvancedMLEngine()
+                ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1029, in __init__
+    self.models = self._initialize_models()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1153, in _initialize_models
+    'hist_gbm': HistGradientBoostingClassifier(random_state=42),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HistGradientBoostingClassifier' is not defined
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Component initialization failed: name 'HistGradientBoostingClassifier' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 68, in initialize_components
+    ml_engine = AdvancedMLEngine()
+                ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1029, in __init__
+    self.models = self._initialize_models()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1153, in _initialize_models
+    'hist_gbm': HistGradientBoostingClassifier(random_state=42),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HistGradientBoostingClassifier' is not defined
+Fatal error: name 'HistGradientBoostingClassifier' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 140, in main
+    components.update(initialize_components())
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 68, in initialize_components
+    ml_engine = AdvancedMLEngine()
+                ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1029, in __init__
+    self.models = self._initialize_models()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1153, in _initialize_models
+    'hist_gbm': HistGradientBoostingClassifier(random_state=42),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HistGradientBoostingClassifier' is not defined
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Component initialization failed: name 'IsolationForest' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 68, in initialize_components
+    ml_engine = AdvancedMLEngine()
+                ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1030, in __init__
+    self.models = self._initialize_models()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1165, in _initialize_models
+    'isolation_forest': IsolationForest(n_estimators=150, contamination='auto', random_state=42),
+                        ^^^^^^^^^^^^^^^
+NameError: name 'IsolationForest' is not defined
+Fatal error: name 'IsolationForest' is not defined
+Traceback (most recent call last):
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 140, in main
+    components.update(initialize_components())
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\main.py", line 68, in initialize_components
+    ml_engine = AdvancedMLEngine()
+                ^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1030, in __init__
+    self.models = self._initialize_models()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\MyFYP\MyProg\AdvoSheild\engines\ml_engine.py", line 1165, in _initialize_models
+    'isolation_forest': IsolationForest(n_estimators=150, contamination='auto', random_state=42),
+                        ^^^^^^^^^^^^^^^
+NameError: name 'IsolationForest' is not defined
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+ML Engine degraded: 'AdvancedMLEngine' object has no attribute 'load_dataset'
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+ML Engine degraded: 'AdvancedMLEngine' object has no attribute 'train_all_models'
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Shutting down AdvoShield...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Shutting down AdvoShield...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+Traceback (most recent call last):
+  File "d:\AdvoSheild\main.py", line 151, in main
+    gui = AdvoShieldGUI(components)
+TypeError: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+Traceback (most recent call last):
+  File "d:\AdvoSheild\main.py", line 151, in main
+    gui = AdvoShieldGUI(components)
+TypeError: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+Traceback (most recent call last):
+  File "d:\AdvoSheild\main.py", line 151, in main
+    gui = AdvoShieldGUI(components)
+TypeError: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+Traceback (most recent call last):
+  File "d:\AdvoSheild\main.py", line 151, in main
+    gui = AdvoShieldGUI(components)
+TypeError: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+Traceback (most recent call last):
+  File "d:\AdvoSheild\main.py", line 151, in main
+    gui = AdvoShieldGUI(components)
+TypeError: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+Traceback (most recent call last):
+  File "d:\AdvoSheild\main.py", line 151, in main
+    gui = AdvoShieldGUI(components)
+TypeError: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+Traceback (most recent call last):
+  File "d:\AdvoSheild\main.py", line 151, in main
+    gui = AdvoShieldGUI(components)
+TypeError: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+Fatal error: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+Traceback (most recent call last):
+  File "d:\AdvoSheild\main.py", line 151, in main
+    gui = AdvoShieldGUI(components)
+TypeError: AdvoShieldGUI.__init__() missing 5 required positional arguments: 'system_monitor', 'file_scanner', 'quarantine_manager', 'report_generator', and 'network_sniffer'
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
+Driver interface unresponsive (running in user mode only)
+Initializing system components...
+AdvoShield shutdown complete
