@@ -353,7 +353,8 @@ class AdvancedMLEngine:
                 for chunk in chunks:
                     processed = pipeline.fit_transform(chunk, labels.loc[chunk.index])
                     processed_chunks.append(processed)
-                
+                    pipeline.fit(chunks[0], labels.loc[chunks[0].index])
+                    processed_chunks = [pipeline.transform(chunk) for chunk in chunks]
                 X_processed = np.vstack(processed_chunks)
             else:
                 X_processed = pipeline.fit_transform(features, labels)
